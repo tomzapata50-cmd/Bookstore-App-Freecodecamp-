@@ -1,0 +1,26 @@
+/* Basic styles kept minimal for the project requirements */
+:root{
+  --accent:#2a9d8f;
+  --muted:#6c757d;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; padding:0; background:#f7f7f8; color:#111}
+.app-container{max-width:1100px;margin:24px auto;padding:16px}
+header{display:flex;align-items:center;justify-content:space-between}
+h1{margin:0}
+main{display:flex;gap:32px;margin-top:24px}
+.form-column{min-width:320px}
+.book-list{flex:1;background:#fff;padding:16px;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+.book{display:flex;justify-content:space-between;align-items:center;padding:12px;border-bottom:1px solid #eef}
+.book:last-child{border-bottom:none}
+.book .info{flex:1}
+.book .title{font-weight:600}
+.book .author{color:var(--muted);font-size:0.95rem}
+.controls{display:flex;gap:8px}
+.btn{background:var(--accent);color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.add-form{background:#fff;padding:16px;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+.add-form input, .add-form select{width:100%;padding:8px;margin-bottom:8px;border:1px solid #ddd;border-radius:4px}
+.categories{background:#fff;padding:12px;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,0.06);margin-bottom:16px}
+footer{margin-top:24px;color:var(--muted)}
+@media (max-width:800px){main{flex-direction:column}.form-column{min-width:unset}}
